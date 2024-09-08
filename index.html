@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enzocustomz</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section class="main-password-wrapper">
+
+        <!-- main content wrapper start here -->
+        <div class="contents-wrapper">
+            <!-- Logo Block Start Here -->
+            <div class="logo-wrapper">
+                <img src="./images/TOP FLOOR ANGELS.png" alt="Site Logo">
+            </div>
+            <!-- Logo Block End Here -->
+
+            <!-- Passowrd Block Start Here -->
+            <div class="__pf_password">
+                <a href="#" class="__pf_password-btn"> ENTER USING Password </a>
+              
+                <div class="__pf_password-form">
+                  <form method="post" action="/password" id="login_form" accept-charset="UTF-8" class="storefront-password-form">
+                    <input type="hidden" name="form_type" value="storefront_password"><input type="hidden" name="utf8" value="✓">
+              
+                    <p>Enter Store Using Password:</p>
+                    <div>
+                      <input type="password" name="password" placeholder="Password" required>
+                      <input type="submit" value="Enter">
+                    </div>
+                  </form>
+              
+                  <span class="__pf_password-form--close"></span>
+                </div>
+            </div>
+            <!-- Passowrd Block End Here -->
+
+            <!-- Heading Block Start Here -->
+             <div class="headings-block">
+
+                <h2 class="heading">
+                    EARLY ACCESS
+                </h2>
+
+                <h3 class="sub-heading">
+                    GET EARLY ACCESS & EXCLUSIVE DEALS
+                </h3>
+             </div>
+            <!-- Heading Block End Here -->
+
+            <!-- SMS Subscriber Block Start Here -->
+             <div class="sms-subscriber-block">
+                <div class="page-width">
+                    <div class="form-content-wrapper">
+                    <div class="form" id="ps__subscribe-form">
+                        <form method="post" action="https://api.postscript.io/subscribe/form" target="dummyframe" onsubmit="document.getElementById('ps__sent-message').style.display = 'block'; document.getElementById('ps__subscribe-form').style.display = 'none';"><input value="352425" type="hidden" name="shop_id" id="ps__shop_id"> <input value="392887" type="hidden" name="keyword_id" id="ps__keyword_id">
+                    <div>
+                        <input class="input-sms" placeholder="Phone Number" type="phone" name="phone" id="ps__phone-subscribe" autofocus="">
+                    </div>
+                    <div>
+                        <input class="btn sms-btn" value="Subscribe" type="submit">
+                    </div>
+                    <div>
+                        <p class="alert-message">
+                            *By providing your phone number, you agree to receive recurring automated marketing text messages (e.g. cart reminders) from this shop and third parties acting on its behalf. Consent is not a condition to obtain goods or services. Msg &amp; data rates may apply. Msg frequency varies. Reply HELP for help and STOP to cancel. You also agree to the 
+                        <a href="https://terms.pscr.pt/legal/shop/digitalbdstore/terms_of_service">Terms of Service</a> and 
+                        <a href="https://terms.pscr.pt/legal/shop/digitalbdstore/privacy_policy">Privacy Policy</a>
+                        </p>
+                    </div>
+                   
+                    </form>
+
+                </div>
+                    <div class="success-message" id="ps__sent-message" style="display: none;">
+                    <h4>Thanks for subscribing! We'll send you a message shortly.</h4>
+                    </div>
+                    </div>
+                    </div>
+
+                    <iframe id="ps__dummyframe" name="dummyframe" border="0" height="0" width="0">
+                       
+                    </iframe>
+             </div>
+            <!-- SMS Subscriber Block End Here -->
+
+            <!-- Product block start here -->
+             <div class="products-block">
+                <div class="product-title-block">
+                    <h2>Here what's are coming </h2>
+                </div>
+              
+                <div class="products">
+                    <img src="./images/transparent files 5 .png" alt="Product">
+                    <img src="./images/transparent files3 .png" alt="Product">
+                    <img src="./images/WHERE IS MY MIND.png" alt="Product">
+                </div>
+                
+             </div>
+            <!-- Product block end here -->
+            
+        </div>
+        <!-- main content wrapper end here -->
+
+
+    </section>
+
+
+    <script type="text/javascript">
+        window.addEventListener("load", function() {
+                document.querySelector(".__pf_password-btn").addEventListener("click", function() {
+                    document.querySelector(".__pf_password-btn").style.display = "none";
+                    document.querySelector(".__pf_password-form").style.display = "flex";
+                });
+                document.querySelector(".__pf_password-form--close").addEventListener("click", function() {
+                    document.querySelector(".__pf_password-form").style.display = "none";
+                    document.querySelector(".__pf_password-btn").style.display = "initial";
+                });
+                if ( document.querySelectorAll(".errors").length ) {
+                    document.querySelector(".__pf_password-btn").click();
+                }
+            });
+      </script>
+</body>
+</html>
+
+
+
+
+
